@@ -24,6 +24,7 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-
+void quick_sort_eli_vale_mauro(int *array, size_t size, int p_low, int p_high);
+int partition(int *array, size_t size, int p_low, int p_high);
 
 # endif
