@@ -2,8 +2,9 @@
 
 /**
  * swap_nodes - swaps two nodes positions
- *
  *@list: unsorted list
+ *@node_left: left node
+ *@node_right: right node
  * Return: void
  */
 void swap_nodes(listint_t **list, listint_t *node_left, listint_t *node_right)
@@ -39,6 +40,9 @@ void swap_nodes(listint_t **list, listint_t *node_left, listint_t *node_right)
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *current, *back;
+
+	if (!list || !*list || !((*list)->next))
+		return;
 
 	current = *list;
 
